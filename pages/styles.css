@@ -1,7 +1,9 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 5px;
+  padding: 10;
   box-sizing: border-box;
+  align-items: center;
+  
 }
 
 .navbar {
@@ -12,9 +14,9 @@
 
 .navbackground {
   background-image: url(./img/navbackground.jpg);
-  height: 90vh;
+  height: 70vh;
   width: 99vh;
-  background-size: 90vh;
+  background-size:contain;
   display: flex;
   justify-content: center;
   background-repeat: no-repeat;
@@ -33,11 +35,23 @@ body {
   justify-items: center;
 }
 
+.logo {
+    background: url (".");
+}
+
+
 .booknow {
+  background: url("./svg/Book-Now-Button.svg");
   background-color: #f9f1e4;
-  padding: 1vh;
-
+  padding: 0px;
+  border-radius: 6px;
+  height: 52.42px;
+  width: 195px;
   position: absolute;
-
-  align-items: center;
+  background-repeat: no-repeat;
+}
+.button {
+    height: 52.42px;
+    width: 195px;
+    opacity: 0;
 }
