@@ -1,54 +1,5 @@
-body {
-  margin: 10;
-  z-index: 1;
-}
-section {
-  height: 99vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #606c38;
-  position: relative;
-}
-main {
-  height: 100vh;
-  overflow: hidden;
-}
-section:nth-child(2) {
-  background: #283618;
-}
-section:nth-child(3) {
-  background: #fefae0;
-}
-.nav {
-  position: fixed;
-  bottom: 7vh;
-  left: 5vh;
-}
-.text {
-  position: absolute;
-  font-family: Helvetica Neue;
-  font-style: normal;
-  width: 276px;
-  height: 316px;
-  left: 20%;
-  opacity: 30;
-  transform: translateY(200px);
-  transition: all 0.5s 0.5s;
-}
-.text.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-button.booknow {
-  background-image: url(./Svg/Frame\ 3.svg);
-  display: flex;
-  flex-direction: row-reverse;
-  background-color: #ffffff;
-  font-size: 0px;
-  height: 100px;
-  width: 280px;
-  border: 1px solid rgb(249, 249, 249);
-  padding: 10px;
-  border-radius: 5px;
-}
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+} 
+
