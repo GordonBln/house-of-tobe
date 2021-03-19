@@ -2,8 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
-  
 }
 li {
   list-style: none;
@@ -13,11 +11,10 @@ a {
   text-decoration: none;
 }
 body {
-  background-color:  #f9f1e4b0;
+  background-color: #f9f1e4b0;
   background-size: cover;
   height: 80vh;
 }
-
 
 .img-container {
   background: url(../images/LandingPageImage.jpg);
@@ -34,7 +31,7 @@ body {
 
 .booknow {
   background-color: #f9f1e4;
-
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,15 +42,14 @@ body {
   background-color: #f9f1e4;
   border: none;
   color: #5a3b21;
-  padding: 15px 32px;
+  padding: 10px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
   border-radius: 4px;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
-  transition: all 0.3s ease-out;
+  transition: all 1s ease-out;
 }
 .bookbutton:hover {
   background: #c2c891;
@@ -168,7 +164,6 @@ body {
 .popup h2 {
   margin-top: 0;
   color: #333;
-  
 }
 .popup .close {
   position: absolute;
@@ -181,9 +176,10 @@ body {
   color: #333;
 }
 .popup .close:hover {
-  color: #DDA15E;
+  color: #dda15e;
 }
 .popup .content {
   max-height: 40%;
+  min-width: 60vh;
   overflow: auto;
 }
