@@ -108,3 +108,16 @@ body {
   padding: 1vh;
   align-items: center;
 }
+
+.bookbutton {
+  background-color: #F9F1E4;
+  border: none;
+  color: #black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  font-size: 20px;
+}
