@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -10,13 +12,19 @@ li {
 a {
   text-decoration: none;
 }
+body {
+  background-color: #f9f1e4b0;
+  background-size: cover;
+  height: 80vh;
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+}
 
 .img-container {
   background: url(../images/LandingPageImage.jpg);
   background-position: 10%;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  max-width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -24,9 +32,20 @@ a {
   padding-bottom: 40px;
 }
 
+.pictures {
+  max-width: 100%;
+}
+
+.logolanding {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
 .booknow {
   background-color: #f9f1e4;
-
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,15 +56,14 @@ a {
   background-color: #f9f1e4;
   border: none;
   color: #5a3b21;
-  padding: 15px 32px;
+  padding: 10px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
   border-radius: 4px;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
-  transition: all 0.3s ease-out;
+  transition: all 1s ease-out;
 }
 .bookbutton:hover {
   background: #c2c891;
@@ -168,5 +186,6 @@ a {
 }
 .popup .content {
   max-height: 40%;
+  min-width: 60vh;
   overflow: auto;
 }
