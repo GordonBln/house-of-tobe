@@ -169,9 +169,9 @@ body {
 .popup {
   margin: 70px auto;
   padding: 20px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.543);
   border-radius: 5px;
-  width: 30%;
+  width: 70%;
   position: relative;
   transition: all 1s ease-in-out;
 }
