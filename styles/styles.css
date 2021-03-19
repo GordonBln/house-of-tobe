@@ -2,8 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
-  
 }
 li {
   list-style: none;
@@ -12,12 +10,6 @@ li {
 a {
   text-decoration: none;
 }
-body {
-  background-color:  #f9f1e4b0;
-  background-size: cover;
-  height: 80vh;
-}
-
 
 .img-container {
   background: url(../images/LandingPageImage.jpg);
@@ -133,14 +125,6 @@ body {
   background-color: #583a20;
 }
 
-/* body {
-  background-color: #f9f1e4;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-} */
-
 .overlay {
   position: fixed;
   top: 0;
@@ -168,7 +152,6 @@ body {
 .popup h2 {
   margin-top: 0;
   color: #333;
-  
 }
 .popup .close {
   position: absolute;
@@ -181,7 +164,7 @@ body {
   color: #333;
 }
 .popup .close:hover {
-  color: #DDA15E;
+  color: #dda15e;
 }
 .popup .content {
   max-height: 40%;
