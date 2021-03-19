@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap);
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
+
 li {
   list-style: none;
 }
@@ -12,6 +13,7 @@ li {
 a {
   text-decoration: none;
 }
+
 body {
   background-color: #f9f1e4b0;
   background-size: cover;
@@ -56,7 +58,6 @@ body {
   background-color: #f9f1e4;
   border: none;
   color: #5a3b21;
-  padding: 10px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -64,10 +65,13 @@ body {
   font-size: 25px;
   cursor: pointer;
   transition: all 1s ease-out;
+  padding: 10px 15px;
 }
+
 .bookbutton:hover {
   background: #c2c891;
 }
+
 .navbackground {
   display: flex;
   justify-content: center;
@@ -83,11 +87,13 @@ body {
   top: -100vh;
   transition: all 0.7s;
 }
+
 .dropdown-menu .logo {
   position: fixed;
   top: 15px;
   left: 15px;
 }
+
 .dropdown-menu .hamburger-menu {
   width: 30px;
   height: 35px;
@@ -100,16 +106,19 @@ body {
   top: 30px;
   right: 25px;
 }
+
 .dropdown-menu .hamburger-menu .line {
   width: 100%;
   height: 1px;
   background-color: #faf2e5;
-  margin: 5px 0;
   transition: all 0.7s;
+  margin: 5px 0;
 }
+
 .dropdown-menu .hamburger-menu .line-2 {
   transform: translateX(10px);
 }
+
 .dropdown-menu-items {
   width: 100%;
   height: 100%;
@@ -119,22 +128,28 @@ body {
   align-items: center;
   padding: 80px 0;
 }
+
 .dropdown-menu-items .item {
   font-size: 30px;
   color: #583a20;
 }
+
 .active {
   top: 0;
 }
+
 .active .hamburger-menu .line {
   background-color: #583a20;
 }
+
 .active .hamburger-menu .line-1 {
   transform: rotateZ(-45deg) translate(-8px, 8px);
 }
+
 .active .hamburger-menu .line-2 {
   opacity: 0;
 }
+
 .active .hamburger-menu .line-3 {
   transform: rotateZ(45deg) translate(-8px, -8px);
 }
@@ -154,36 +169,42 @@ body {
   visibility: hidden;
   opacity: 0;
 }
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
 }
+
 .popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.543);
   border-radius: 5px;
-  width: 30%;
+  width: 70%;
   position: relative;
   transition: all 1s ease-in-out;
+  margin: 70px auto;
+  padding: 20px;
 }
+
 .popup h2 {
   margin-top: 0;
   color: #333;
 }
+
 .popup .close {
   position: absolute;
   top: 20px;
   right: 30px;
   transition: all 200ms;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
   color: #333;
 }
+
 .popup .close:hover {
   color: #dda15e;
 }
+
 .popup .content {
   max-height: 40%;
   min-width: 60vh;
