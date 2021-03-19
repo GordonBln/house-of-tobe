@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 li {
   list-style: none;
@@ -10,14 +11,70 @@ li {
 a {
   text-decoration: none;
 }
+body {
+  background-size: cover;
+  height: 80vh;
+}
+
+
+.img-container {
+  background: url(../images/LandingPageImage.jpg);
+  background-position: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 40px;
+}
+
+.booknow {
+  background-color: #f9f1e4;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookbutton {
+  background-color: #f9f1e4;
+  border: none;
+  color: #5a3b21;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.bookbutton:hover {
+  background: #c2c891;
+}
+.navbackground {
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  align-items: center;
+}
 
 .dropdown-menu {
   width: 100%;
   height: 100vh;
-  background-color: #262626;
+  background-color: #faf2e5;
   position: fixed;
   top: -100vh;
   transition: all 0.7s;
+}
+.dropdown-menu .logo {
+  position: fixed;
+  top: 15px;
+  left: 15px;
 }
 .dropdown-menu .hamburger-menu {
   width: 30px;
@@ -34,7 +91,7 @@ a {
 .dropdown-menu .hamburger-menu .line {
   width: 100%;
   height: 1px;
-  background-color: red;
+  background-color: #faf2e5;
   margin: 5px 0;
   transition: all 0.7s;
 }
@@ -74,37 +131,57 @@ a {
   background-color: #583a20;
 }
 
-.navbar {
-  background-image: none;
-  display: flex;
-  flex-direction: row;
-}
-
-.navbackground {
-  background-image: url(./img/navbackground.jpg);
-  height: 90vh;
-  width: 99vh;
-  background-size: 90vh;
-  display: flex;
-  justify-content: center;
-  background-repeat: no-repeat;
-  align-items: center;
-}
-
-li {
-  list-style: none;
-}
-
-body {
+/* body {
   background-color: #f9f1e4;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
-}
+} */
 
-.booknow {
-  background-color: #f9f1e4;
-  padding: 1vh;
-  align-items: center;
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 40%;
+  overflow: auto;
 }
