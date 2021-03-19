@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   
+  
 }
 li {
   list-style: none;
@@ -12,6 +13,7 @@ a {
   text-decoration: none;
 }
 body {
+  background-color:  #f9f1e4b0;
   background-size: cover;
   height: 80vh;
 }
