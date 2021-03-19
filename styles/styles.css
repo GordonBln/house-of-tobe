@@ -161,12 +161,12 @@ body {
   border-radius: 5px;
   width: 30%;
   position: relative;
-  transition: all 5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .popup h2 {
   margin-top: 0;
   color: #333;
-  font-family: Tahoma, Arial, sans-serif;
+  
 }
 .popup .close {
   position: absolute;
@@ -179,7 +179,7 @@ body {
   color: #333;
 }
 .popup .close:hover {
-  color: #06D85F;
+  color: #DDA15E;
 }
 .popup .content {
   max-height: 40%;
