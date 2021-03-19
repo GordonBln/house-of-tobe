@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+.background {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("backgroundreal.png");
+    
+}
+
+.booknow {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.bookbutton {
+
+  background-color: #F9F1E4;
+  border: none;
+  color: #black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  font-size: 20px;
+
+}
+
+body {
+    background-color: #F9F1E4;
+    text-align: center;
+}
