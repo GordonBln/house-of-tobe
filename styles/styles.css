@@ -36,8 +36,10 @@ a {
   height: 1px;
   background-color: red;
   margin: 5px 0;
-  -webkit-transition: all 0.7s;
   transition: all 0.7s;
+}
+.dropdown-menu .hamburger-menu .line-2 {
+  transform: translateX(10px);
 }
 .dropdown-menu-items {
   width: 100%;
@@ -54,6 +56,18 @@ a {
 }
 .active {
   top: 0;
+}
+.active .hamburger-menu .line {
+  background-color: #583a20;
+}
+.active .hamburger-menu .line-1 {
+  transform: rotateZ(-45deg) translate(-8px, 8px);
+}
+.active .hamburger-menu .line-2 {
+  opacity: 0;
+}
+.active .hamburger-menu .line-3 {
+  transform: rotateZ(45deg) translate(-8px, -8px);
 }
 
 .active .hamburger-menu .line {
