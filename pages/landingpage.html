@@ -1,109 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/styles.css" />
     <title>House of To-Be</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="img-container">
-        <div class="navbackground">
+      <button class="bookbutton">
+        <a href="#popup1">Book Now</a>
+      </button>
 
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <h2>Booking Request</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <form id="contactForm" class="popup-container">
+              <select>
+                <option value="0">Select Resort:</option>
+                <option value="1">House of To-Be</option>
+                <option value="2">Villa France</option>
+                <option value="3">Villa Lavandes</option>
+              </select>
 
-            <div class="booknow">
-                <button class="bookbutton" href="#popup1"> <a class="bookbutton" href="#popup1">Book Now</a></button>
+              <input
+                type="text"
+                class="datepicker"
+                id="litepicker"
+                placeholder="Check in - Check out"
+                required="required"
+                readonly=""
+              />
 
-                <div id="popup1" class="overlay">
-                    <div class="popup">
-                        <h2>Booking Request</h2>
-                        <a class="close" href="#">&times;</a>
-                        <div class="content">
-                            <form id="contactForm">
-                                <label for="name">Name:</label><br>
-                                <input type="text" id="name" name="name" value="Enter your name"><br>
-                                <label for="arrivaldate">check-in date</label><br>
-                                <input type="date" id="date" name="arrivaldate" value="Select date of arrival"><br>
-                                <label for="arrivaldate">check-out date</label><br>
-                                <input type="date" id="date" name="arrivaldate" value="Select date of arrival"><br>
-                                <label for="pax">Number of persons</label><br>
-                                <input type="number" id="pax" name="persons" value="Enter number of persons"><br>
-                                <label for="email">Email:</label><br>
-                                <input type="email" id="email" name="email" value="example@gmail.com"><br>
-                                <label for="message">Message:</label><br>
-                                <textarea id="message" name="message"></textarea>
-                                <br><br>
-                                <input type="submit" value="submit">
-                            </form>
-                        </div>
-                    </div>
-                </div>
+              <select>
+                <option value="0">Number of Person</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
 
-
-
-
-            </div>
+              <input type="submit" value="reserve now" class="submit-button" />
+            </form>
+          </div>
         </div>
+      </div>
     </div>
     <div class="dropdown-menu">
-        <img src="../images/Logo-onPages.svg" height="70" width="74" alt="logo" class="logo" />
-        <div class="hamburger-menu">
-            <div class="line line-1"></div>
-            <div class="line line-2"></div>
-            <div class="line line-3"></div>
-        </div>
-        <ul class="dropdown-menu-items">
-            <li><a class="item" href="#">About Us</a></li>
-            <li><a class="item" href="#">Gallery</a></li>
-            <li><a class="item" href="#">Reservation</a></li>
-            <li><a class="item" href="#">Contact Info</a></li>
-        </ul>
+      <img
+        src="../images/Logo-onPages.svg"
+        height="70"
+        width="74"
+        alt="logo"
+        class="logo"
+      />
+      <div class="hamburger-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+      </div>
+      <ul class="dropdown-menu-items">
+        <li><a class="item" href="#">About Us</a></li>
+        <li><a class="item" href="#">Gallery</a></li>
+        <li><a class="item" href="#">Reservation</a></li>
+        <li><a class="item" href="#">Contact Info</a></li>
+      </ul>
     </div>
-
-
-
-
-    <a href="landingpage.html">
-
-    </a>
-
+    <div class="slidedown-bar">
+      <img
+        src="../images/Logo-onPages.svg"
+        height="70"
+        width="74"
+        alt="logo"
+        class="logo-slidedown"
+      />
+      <a href="#popup1" class="reserve">reserve</a>
+      <div class="hamburger-menu-slidedown">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+      </div>
     </div>
-
-    <img class ="logolanding" src="../images/Logo-onPages.svg" alt="logo">
-
-    <div class="welcome">
-        <h1>Welcome to our house of to be</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore eu </p>
-    </div>
-
-    <div class="explore">
+    <main class="main-wrapper">
+      <div class="welcome">
+        <img
+          height="70"
+          width="74"
+          src="../images/Logo-onPages.svg"
+          alt="logo"
+        />
+        <h2>Welcome to House of To Be</h2>
+        <p class="welcome-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu
+        </p>
+      </div>
+      <div class="explore">
         <h2>Explore</h2>
-        
-
-        <img class ="pictures" src="../images/photo_2021-03-17 11.52.00.jpeg" alt="Villa France">
+        <img
+          class="pictures"
+          src="../images/photo_2021-03-17 11.52.00.jpeg"
+          alt="Villa France"
+        />
         <h3>Villa France</h3>
         <p>Our main House Villa France...</p>
         <h2>Explore</h2>
 
-
-
-        <img class ="pictures" src="../images/photo_2021-03-17 11.52.09.jpeg" alt="Villa Lavandes">
+        <img
+          class="pictures"
+          src="../images/photo_2021-03-17 11.52.09.jpeg"
+          alt="Villa Lavandes"
+        />
         <h3>Villa Lavandes</h3>
         <p>Our Beach House Villa Lavandes...</p>
-
-    </div>
+      </div>
+    </main>
     <footer>
-        <p>phone +902222222</p>
-        <p><a href="info@housoftobe.com">info@housoftobe.com</a></p>
+      <p>phone +902222222</p>
+      <p><a href="info@housoftobe.com">info@housoftobe.com</a></p>
     </footer>
-    <script src="../js/index.js"></script>
-</body>
 
+    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
 </html>
