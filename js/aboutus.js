@@ -1,56 +1,41 @@
-const cards = document.querySelector(".cards");
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+const slidedownMenu = document.querySelector(".slidedown-bar");
+const slidedownMenuIcon = document.querySelector(".hamburger-menu-slidedown");
+hamburgerMenu.addEventListener("click", () => {
+  dropdownMenu.classList.toggle("active");
+  slidedownMenuIcon.classList.toggle("active");
+});
+slidedownMenuIcon.addEventListener("click", () => {
+  dropdownMenu.classList.toggle("active");
+  slidedownMenuIcon.classList.toggle("active");
+});
 
-const profiles = [
-  {
-    name: "Jessica",
-    foto: "",
-    text: "The mind of the hotel",
+window.onscroll = () => {
+  scrollFunction();
+};
+
+const scrollFunction = () => {
+  if (
+    document.body.scrollTop > 600 ||
+    document.documentElement.scrollTop > 600
+  ) {
+    document.querySelector(".slidedown-bar").style.right = "0";
+  } else {
+    document.querySelector(".slidedown-bar").style.right = "-100px";
+  }
+};
+const picker = new Litepicker({
+  element: document.getElementById("litepicker"),
+  singleMode: false,
+  tooltipText: {
+    one: "night",
+    other: "nights",
   },
-  {
-    name: "Agnes",
-    foto: "",
-    text: "",
+  tooltipNumber: (totalDays) => {
+    return totalDays - 1;
   },
-  {
-    name: "Gordon",
-    foto: "",
-    text: "",
-  },
-  {
-    name: "Okan",
-    foto: "",
-    text: "",
-  },
-  {
-    name: "Gege",
-    foto: "",
-    text: "",
-  },
-];
+});
 
-function createCard(title, imageUrl) {
-  const card = document.createElement("div");
-  card.classList.add("card");
-  cards.appendChild(card);
 
-  const cardHeader = document.createElement("div");
-  cardHeader.classList.add("card-header");
-  card.appendChild(cardHeader);
 
-  const cardImg = document.createElement("div");
-  cardImg.style.backgroundImage = `url(${imageUrl})`;
-  cardImg.classList.add("card-img");
-  cardHeader.appendChild(cardImg);
-
-  const cardBody = document.createElement("div");
-  cardBody.classList.add("card-body");
-  card.appendChild(cardBody);
-
-  const cardTitle = document.createElement("h2");
-  card.classList.add("card-title");
-  cardTitle.innerHTML = title;
-  card.appendChild(cardTitle);
-}
-for (let i = 0; i < profiles.length; i++) {
-  createCard(profiles[i].name, profiles[i].foto, profiles[i].text);
-}
