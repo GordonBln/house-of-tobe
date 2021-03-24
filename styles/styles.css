@@ -24,6 +24,8 @@ body {
 
 footer {
   display: block;
+  
+  
 }
 
 @keyframes fadein {
@@ -363,10 +365,36 @@ select {
 .aboutuspictures {
   zoom: 100%;
   object-fit: cover;
-  padding: 12px;
+  padding: 2px;
   display: flex;
   max-height: 40vh;
   width: 50vh;
-  border-radius: 28px;
+  border-radius: 2px;
   
+  
+}
+.nicestory{
+
+  position: relative;
+  top: 25px;
+  left: 25px;
+
+}
+.blocimg{
+  
+  
+
+
+ 
+
+}
+
+
+
+.iconify {
+  padding: 10px;
+  position:relative;
+  color: black;
+  
+ 
 }
