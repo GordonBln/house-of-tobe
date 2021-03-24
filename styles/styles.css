@@ -17,6 +17,20 @@ a {
 
 body {
   font-family: Quicksand, Arial, Helvetica, sans-serif;
+  background-color: cornsilk;
+}
+
+footer {
+  display: block;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Header section */
@@ -47,11 +61,35 @@ body {
   text-transform: uppercase;
 }
 
+.img-container2 {
+  background: url(../images/AboutusBackground.jpg);
+  background-position: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 40px;
+}
+.aboutustitle {
+  color: white;
+  position: absolute;
+  font-size: 55px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadein 2s;
+}
 .desktop-logo {
   position: absolute;
   top: 15px;
   left: 15px;
   display: none;
+}
+.pictures {
+  max-width: 100%;
 }
 
 .bookbutton {
@@ -66,7 +104,7 @@ body {
   color: #5a3b21;
 }
 .bookbutton:hover {
-  background: #c2c891;
+  background-color: cornsilk;
 }
 
 /* Dropdown menu */
@@ -353,3 +391,58 @@ select {
 }
 
 /* color:  #583a20 */
+\\ Cards .cards {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  border-radius: 10px;
+  width: 200px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.card-img {
+  border-radius: 10px 10px 0 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url("");
+  height: 200px;
+  width: 100%;
+}
+.card-body {
+  padding: 10px 20px;
+}
+.card-body h2 {
+  margin: 10px 0px;
+}
+.card-button {
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+
+  width: 100%;
+}
+.aboutuspictures {
+  zoom: 100%;
+  object-fit: cover;
+  padding: 2px;
+  display: flex;
+  max-height: 40vh;
+  width: 50vh;
+  border-radius: 2px;
+}
+.nicestory {
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+
+.iconify {
+  padding: 10px;
+  position: relative;
+  color: black;
+}
