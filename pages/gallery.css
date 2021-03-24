@@ -1,0 +1,300 @@
+/* Dropdown menu and logo CSS goes here */
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #f9f1e4b0;
+  background-size: cover;
+  height: 80vh;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
+.img-container {
+  background: url(../images/LandingPageImage.jpg);
+  background-position: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 40px;
+}
+
+.pictures {
+  max-width: 100%;
+}
+
+.logolanding {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.booknow {
+  background-color: #f9f1e4;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookbutton {
+  background-color: #f9f1e4;
+  border: none;
+  color: #5a3b21;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 1s ease-out;
+}
+.bookbutton:hover {
+  background: #c2c891;
+}
+.navbackground {
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+
+.dropdown-menu {
+  width: 100%;
+  height: 100vh;
+  background-color: #faf2e5;
+  position: fixed;
+  top: -100vh;
+  transition: all 0.7s;
+}
+.dropdown-menu .logo {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+}
+.dropdown-menu .hamburger-menu {
+  width: 30px;
+  height: 35px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 30px;
+  right: 25px;
+}
+.dropdown-menu .hamburger-menu .line {
+  width: 100%;
+  height: 1px;
+  background-color: #faf2e5;
+  margin: 5px 0;
+  transition: all 0.7s;
+}
+.dropdown-menu .hamburger-menu .line-2 {
+  transform: translateX(10px);
+}
+.dropdown-menu-items {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 0;
+}
+.dropdown-menu-items .item {
+  font-size: 30px;
+  color: #583a20;
+}
+.active {
+  top: 0;
+}
+.active .hamburger-menu .line {
+  background-color: #583a20;
+}
+.active .hamburger-menu .line-1 {
+  transform: rotateZ(-45deg) translate(-8px, 8px);
+}
+.active .hamburger-menu .line-2 {
+  opacity: 0;
+}
+.active .hamburger-menu .line-3 {
+  transform: rotateZ(45deg) translate(-8px, -8px);
+}
+
+.active .hamburger-menu .line {
+  background-color: #583a20;
+}
+
+/* body {
+  background-color: #f9f1e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+} */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #dda15e;
+}
+.popup .content {
+  max-height: 40%;
+  min-width: 60vh;
+  overflow: auto;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:  #FAF1E4;
+    color: #5a3b21;
+    text-align: center;
+  }
+  
+  
+
+/* Gallery CSS goes here */
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background-color: #f9f1e4b0;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+	font-family: "Quicksand", Arial, Helvetica, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #5a3b21;;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
