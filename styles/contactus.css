@@ -375,3 +375,9 @@ select {
 .buttonsend:hover {
   background: #c2c891;
 }
+
+.phone {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+}
