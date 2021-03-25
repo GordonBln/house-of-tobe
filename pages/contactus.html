@@ -12,8 +12,25 @@
 <body>
 
     <div class=" img-container">
-        <!-- <h1 class="contactustitle">About Us</h1> -->
-        <button class="bookbutton">
+        <a href="landingpage.html"><img src="../images/Logo-onPages.svg" alt="Logo" class="desktop-logo" height="70"
+                width="74" /></a>
+        <div class="desktop-menu">
+            <a href="./landingpage.html">
+                <div class="desktop-menu-items">Home</div>
+            </a>
+
+            <a href="./gallery.html">
+                <div class="desktop-menu-items">Gallery</div>
+            </a>
+            <a href="./aboutus.html">
+                <div class="desktop-menu-items">About Us</div>
+            </a>
+            <a href="./contactus.html">
+                <div class="desktop-menu-items">Contact</div>
+            </a>
+        </div>
+
+        <button class=" bookbutton">
             <a href="#popup1">Book Now</a>
         </button>
 
@@ -80,49 +97,50 @@
 
             </p><br>
 
-            <a href="tel:++902222222" /a><br>
-                <h3><img height="60" width="64" src="../images/PhoneOutgoing.svg" </h3>
+            <!-- <a href="tel:++902222222" /a><br>
+                <h3><img height="60" width="64" src="../images/PhoneOutgoing.svg" </h3>-->
+            <a href="el:++902222222"> <img height="60" width="64" src="../images/PhoneOutgoing.svg"> </a><br>
+
+            <a href="mailto: info@housoftobe.com"> <img height="60" width="64" src="../images/EnvelopeSimple.svg""> </a><br>
 
 
+                   <!--  <a href=" mailto: info@housoftobe.com"><br>
+                <h3><img height="60" width="64" src="../images/EnvelopeSimple.svg" </h3><br>-->
 
+                    <h3>Direct Message</h3><br>
+                    <form>
+                        <div class="form-group">
+                            <label>First Name *</label> <input type="text" class="form-control" name="First Name"
+                                placeholder="" required="required">
+                        </div>
 
-                    <a href="mailto: info@housoftobe.com"><br>
-                        <h3><img height="60" width="64" src="../images/EnvelopeSimple.svg" </h3><br>
+                        <div class="form-group">
+                            <label>Last Name *</label> <input type="text" class="form-control" name="Last Name"
+                                placeholder="" required="required">
+                        </div>
 
-                            <h3>Direct Message</h3><br>
-                            <form>
-                                <div class="form-group">
-                                    <label>First Name *</label> <input type="text" class="form-control"
-                                        name="First Name" placeholder="" required="required">
-                                </div>
+                        <div class="form-group">
+                            <label>E-Mail *</label> <input type="email" class="form-control" name="email"
+                                placeholder="">
+                        </div>
 
-                                <div class="form-group">
-                                    <label>Last Name *</label> <input type="text" class="form-control" name="Last Name"
-                                        placeholder="" required="required">
-                                </div>
+                        <div class="form-group">
+                            <label>Subject *</label> <input type="text" class="form-control" name="Subject"
+                                placeholder="" required="required">
+                        </div>
 
-                                <div class="form-group">
-                                    <label>E-Mail *</label> <input type="email" class="form-control" name="email"
-                                        placeholder="">
-                                </div>
+                        <div class="form-group">
+                            <label>Message *</label>
+                            <textarea class="form-control" name="Message" placeholder=""
+                                required="required"></textarea><br>
 
-                                <div class="form-group">
-                                    <label>Subject *</label> <input type="text" class="form-control" name="Subject"
-                                        placeholder="" required="required">
-                                </div>
+                        </div>
 
-                                <div class="form-group">
-                                    <label>Message *</label>
-                                    <textarea class="form-control" name="Message" placeholder=""
-                                        required="required"></textarea><br>
+                        <div class="form-group">
+                            <input type="submit" class="buttonsend" name="Send" value="Send">
 
-                                </div>
-
-                                <div class="form-group">
-                                    <input type="submit" class="buttonsend" name="Send" value="Send">
-
-                                </div><small>Fields marked with * are required</small>
-                            </form>
+                        </div><small>Fields marked with * are required</small>
+                    </form>
 
         </div>
     </main>

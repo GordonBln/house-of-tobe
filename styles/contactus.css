@@ -19,21 +19,11 @@ body {
   font-family: Quicksand, Arial, Helvetica, sans-serif;
   color: #583a20;
 }
-/*
-.contactustitle{
-  color: white;
-  position:absolute;
-  font-size: 55px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
-}
-*/
+
 /* Header section */
 
 .img-container {
-  background: url(../images/contactpanorama.svg);
+  background: url(../images/panoramacontact.png);
   background-position: 10%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -323,27 +313,7 @@ select {
 }
 
 
-@media screen and (min-width: 900px) {
-  body {
-    overflow: scroll !important;
-  }
-  .desktop-logo {
-    display: block;
-  }
-  .desktop-menu {
-    display: flex;
-    justify-content: space-between;
-  }
-  .main-wrapper .welcome .welcome-text {
-    width: 800px;
-  }
-  .dropdown-menu {
-    display: none;
-  }
-  .slidedown-bar {
-    display: none;
-  }
-}
+
 
 /* contact form
 */
@@ -380,4 +350,25 @@ select {
   display: flex;
   flex-direction: center;
   align-items: center;
+}
+@media screen and (min-width: 900px) {
+  body {
+    overflow: scroll !important;
+  }
+  .desktop-logo {
+    display: block;
+  }
+  .desktop-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-wrapper .welcome .welcome-text {
+    width: 800px;
+  }
+  .dropdown-menu {
+    display: none;
+  }
+  .slidedown-bar {
+    display: none;
+  }
 }
