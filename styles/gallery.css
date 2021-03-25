@@ -21,8 +21,8 @@ body {
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
 }
 
-.img-container {
-  background: url(../images/LandingPageImage.jpg);
+.img-container-gallery {
+  background: url(../images/Gallery.jpg);
   background-position: 10%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,6 +76,50 @@ body {
   background-repeat: no-repeat;
   align-items: center;
 }
+.desktop-logo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: none;
+}
+.desktop-menu {
+  position: absolute;
+  top: 38px;
+  right: 100px;
+  display: none;
+  width: 400px;
+}
+.desktop-menu-items {
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+}
+
+/* desktop css rules */
+
+@media screen and (min-width: 900px) {
+  body {
+    overflow: scroll !important;
+  }
+  .desktop-logo {
+    display: block;
+  }
+  .desktop-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-wrapper .welcome .welcome-text {
+    width: 800px;
+  }
+  .dropdown-menu {
+    display: none;
+  }
+  .slidedown-bar {
+    display: none !important;
+  }
+}
+
+/* dropdown menu */
 
 .dropdown-menu {
   width: 100%;
@@ -145,63 +189,144 @@ body {
   background-color: #583a20;
 }
 
-/* body {
-  background-color: #f9f1e4;
+/* Slidown bar */
+
+.slidedown-bar {
+  background-color: #faf2e5;
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 25px;
+}
+.slidedown-bar .reserve {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #5a3b21;
+}
+.slidedown-bar .hamburger-menu-slidedown {
+  width: 30px;
+  height: 35px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
-} */
+}
+.slidedown-bar .hamburger-menu-slidedown .line {
+  width: 100%;
+  height: 1px;
+  background-color: #583a20;
+  transition: all 0.7s;
+  margin: 5px 0;
+}
+.slidedown-bar .hamburger-menu-slidedown .line-2 {
+  transform: translateX(10px);
+}
+.slidedown-bar .active .line-1 {
+  transform: rotateZ(-45deg) translate(-8px, 8px);
+}
 
+.slidedown-bar .active .line-2 {
+  opacity: 0;
+}
+
+.slidedown-bar .active .line-3 {
+  transform: rotateZ(45deg) translate(-8px, -8px);
+}
 .overlay {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
+  background: rgba(0, 0, 0, 0.6);
+  transition: opacity 700ms;
   visibility: hidden;
   opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
 }
 .popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
+  background: #faf2e5;
   border-radius: 5px;
-  width: 30%;
+  width: 310px;
+  height: 300px;
   position: relative;
-  transition: all 1s ease-in-out;
+  padding: 10px;
 }
+
 .popup h2 {
   margin-top: 0;
   color: #333;
+  text-align: left;
 }
+
 .popup .close {
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 0px;
+  right: 10px;
   transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
+  font-size: 40px;
+  font-weight: 700;
   color: #333;
 }
+
 .popup .close:hover {
   color: #dda15e;
 }
+
 .popup .content {
-  max-height: 40%;
-  min-width: 60vh;
-  overflow: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+}
+.popup .content .popup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popup .content .submit-button {
+  color: white;
+  background-color: #c2c891;
+  text-transform: uppercase;
+  width: 250px;
+  height: 35px;
+  border: none;
+  margin-top: 20px;
+}
+select {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 25px;
+  border: none;
+  margin-bottom: 20px;
+}
+.popup .content .popup-container .datepicker {
+  background-image: url(../images/Calendar.svg);
+  background-repeat: no-repeat;
+  background-position: 225px;
+  background-size: 17px 17px;
+  width: 250px;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  margin-bottom: 20px;
 }
 
-
-footer {
+/* footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -210,93 +335,81 @@ footer {
     color: #5a3b21;
     text-align: center;
   }
-  
-  
+   */
 
 /* Gallery CSS goes here */
 
 :root {
-	/* Base font size */
-	font-size: 10px;
-}
-
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
+  /* Base font size */
+  font-size: 10px;
 }
 
 body {
-	min-height: 100vh;
-	background-color: #f9f1e4b0;
+  background-color: #f9f1e4b0;
 }
 
 .container {
-	max-width: 100rem;
-	margin: 0 auto;
-	padding: 0 2rem 2rem;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
 }
 
 .heading {
-	font-family: "Quicksand", Arial, Helvetica, sans-serif;
-	font-size: 4rem;
-	font-weight: 500;
-	line-height: 1.5;
-	text-align: center;
-	padding: 3.5rem 0;
-	color: #5a3b21;;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  padding: 3.5rem 0;
+  color: #5a3b21;
 }
 
 .heading span {
-	display: block;
+  display: block;
 }
 
 .gallery {
-	display: flex;
-	flex-wrap: wrap;
-	/* Compensate for excess margin on outer gallery flex items */
-	margin: -1rem -1rem;
+  display: flex;
+  flex-wrap: wrap;
+  /* Compensate for excess margin on outer gallery flex items */
+  margin: -1rem -1rem;
 }
 
 .gallery-item {
-	/* Minimum width of 24rem and grow to fit available space */
-	flex: 1 0 24rem;
-	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
-	margin: 1rem;
-	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-	overflow: hidden;
+  /* Minimum width of 24rem and grow to fit available space */
+  flex: 1 0 24rem;
+  /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
 }
 
 .gallery-image {
-	display: block;
-	width: 100%;
- height: 500px;
- object-fit: cover;
-	transition: transform 400ms ease-out;
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
 }
 
 .gallery-image:hover {
-	transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 /*
-
 The following rule will only run if your browser supports CSS grid.
-
 Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
-
 */
 
 @supports (display: grid) {
-	.gallery {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-		grid-gap: 2rem;
-	}
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 2rem;
+  }
 
-	.gallery,
-	.gallery-item {
-  margin: 0;
-
-	}
+  .gallery,
+  .gallery-item {
+    margin: 0;
+  }
 }

@@ -20,7 +20,30 @@ body {
 }
 
 /* Header section */
-
+.img-container-contact-us {
+  background: url(../images/panoramacontact.png);
+  background-position: 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 40px;
+}
+.img-container-aboutus-page {
+  background: url(../images/AboutusBackground.jpg);
+  background-position: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 40px;
+}
 .img-container {
   background: url(../images/LandingPageImage.jpg);
   background-position: 10%;
@@ -35,9 +58,6 @@ body {
   position: relative;
 }
 
-.pictures {
-  max-width: 100%;
-}
 .bookbutton {
   background-color: #f9f1e4;
   border: none;
@@ -296,6 +316,7 @@ select {
 .overflow {
   overflow: hidden;
 }
+
 /* Main section */
 
 .main-wrapper {
@@ -311,6 +332,89 @@ select {
   align-items: center;
   text-align: center;
 }
+.explore {
+  display: flex;
+  flex-direction: column;
+}
+.explore-img {
+  max-width: 100%;
+}
+.explore-text {
+  margin: 50px 0;
+  text-align: center;
+}
+.explore-text > p {
+  margin: 50px 0;
+}
+
+/* contact-form-contact us page */
+.main-wrapper-contact-us {
+  padding: 0;
+}
+
+.welcome-contact-us {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: first baseline;
+  align-items: center;
+  text-align: center;
+  background-color: #f9f1e4;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttonsend {
+  background-color: #5a3b21;
+  border: #5a3b21;
+  border-radius: 4px;
+  border-style: solid;
+  padding: 4px 20px;
+  font-size: 15px;
+  color: #f9f1e4;
+}
+
+.buttonsend > a {
+  color: #5a3b21;
+}
+
+.buttonsend:hover {
+  background: #c2c891;
+}
+
+.phone {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+}
+
+/* about-us page */
+.nicestory {
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+
+.blocimg {
+  width: 100%;
+}
+
+.iconify {
+  padding: 10px;
+  position: relative;
+  color: black;
+  z-index: -1;
+}
 @media screen and (min-width: 900px) {
   body {
     overflow: scroll !important;
@@ -325,6 +429,23 @@ select {
   .main-wrapper .welcome .welcome-text {
     width: 800px;
   }
+  .explore {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .explore-img {
+    width: 45%;
+    margin: 40px 0;
+  }
+  .explore-text {
+    text-align: left;
+    width: 35%;
+    margin-left: 50px;
+  }
+
   .dropdown-menu {
     display: none;
   }

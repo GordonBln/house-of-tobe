@@ -5,175 +5,138 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="gallery.css" />
+    <link rel="shortcut icon" href="../images/Logo-onPages.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/gallery.css" />
     <title>House of To-Be</title>
 </head>
 
 <body>
-    <div class="img-container">
-        <div class="navbackground">
-
-
-            <div class="booknow">
-                <button class="bookbutton" href="#popup1"> <a class="bookbutton" href="#popup1">Book Now</a></button>
-
-                <div id="popup1" class="overlay">
-                    <div class="popup">
-                        <h2>Booking Request</h2>
-                        <a class="close" href="#">&times;</a>
-                        <div class="content">
-                            <form id="contactForm">
-                                <label for="name">Name:</label><br>
-                                <input type="text" id="name" name="name" value="Enter your name"><br>
-                                <label for="arrivaldate">check-in date</label><br>
-                                <input type="date" id="date" name="arrivaldate" value="Select date of arrival"><br>
-                                <label for="arrivaldate">check-out date</label><br>
-                                <input type="date" id="date" name="arrivaldate" value="Select date of arrival"><br>
-                                <label for="pax">Number of persons</label><br>
-                                <input type="number" id="pax" name="persons" value="Enter number of persons"><br>
-                                <label for="email">Email:</label><br>
-                                <input type="email" id="email" name="email" value="example@gmail.com"><br>
-                                <label for="message">Message:</label><br>
-                                <textarea id="message" name="message"></textarea>
-                                <br><br>
-                                <input type="submit" value="submit">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-            </div>
+    <div class="img-container-gallery">
+        <a href="landingpage.html"
+          ><img
+            src="../images/Logo-onPages.svg"
+            alt="Logo"
+            class="desktop-logo"
+            height="70"
+            width="74"
+        /></a>
+        <div class="desktop-menu">
+          <a href="./landingpage.html"
+            ><div class="desktop-menu-items">Home</div></a
+          >
+          <a href="./gallery.html">
+            <div class="desktop-menu-items">Gallery</div></a
+          >
+          <a href="./aboutus.html"
+            ><div class="desktop-menu-items">About Us</div></a
+          >
+  
+          <a href="./contactus.html"
+            ><div class="desktop-menu-items">Contact</div></a
+          >
         </div>
-    </div>
-    <div class="dropdown-menu">
-        <img src="../images/Logo-onPages.svg" height="70" width="74" alt="logo" class="logo" />
+        <button class="bookbutton">
+          <a href="#popup1">Book Now</a>
+        </button>
+  
+        <div id="popup1" class="overlay">
+          <div class="popup">
+            <h2>Booking Request</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+              <form id="contactForm" class="popup-container">
+                <select>
+                  <option value="0">Select Resort:</option>
+                  <option value="1">House of To-Be</option>
+                  <option value="2">Villa France</option>
+                  <option value="3">Villa Lavandes</option>
+                </select>
+  
+                <input
+                  type="text"
+                  class="datepicker"
+                  id="litepicker"
+                  placeholder="Check in - Check out"
+                  required="required"
+                  readonly=""
+                />
+  
+                <select>
+                  <option value="0">Number of Person</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+  
+                <input type="submit" value="reserve now" class="submit-button" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown-menu">
+        <a href="./landingpage.html"
+          ><img
+            src="../images/Logo-onPages.svg"
+            height="70"
+            width="74"
+            alt="logo"
+            class="logo"
+        /></a>
+  
         <div class="hamburger-menu">
-            <div class="line line-1"></div>
-            <div class="line line-2"></div>
-            <div class="line line-3"></div>
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
         </div>
         <ul class="dropdown-menu-items">
-            <li><a class="item" href="#">About Us</a></li>
-            <li><a class="item" href="#">Gallery</a></li>
-            <li><a class="item" href="#">Reservation</a></li>
-            <li><a class="item" href="#">Contact Info</a></li>
+          <li><a class="item" href="./landingpage.html">Home</a></li>
+          <li><a class="item" href="./aboutus.html">About Us</a></li>
+          <li><a class="item" href="./gallery.html">Gallery</a></li>
+          <li><a class="item" href="./contactus.html">Contact Info</a></li>
         </ul>
-    </div>
-
-
-
-
-    <a href="landingpage.html">
-
-    </a>
-
-
-    <img class="logolanding" src="../images/Logo-onPages.svg" alt="logo">
-
-    <h1 class="heading">Experience our rooms</h1>
-
-    <div class="gallery">
-
-        <div class="gallery-item">
-            <img class="gallery-image" src="https://i.imgur.com/oVi9UwN.jpg" alt="Discover our rooms">
+      </div>
+      <div class="slidedown-bar">
+        <a href="./landingpage.html"
+          ><img
+            src="../images/Logo-onPages.svg"
+            height="70"
+            width="74"
+            alt="logo"
+            class="logo-slidedown"
+        /></a>
+  
+        <a href="#popup1" class="reserve">reserve</a>
+        <div class="hamburger-menu-slidedown">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
         </div>
+      </div>
 
-        <div class="gallery-item">
-            <img class="gallery-image" src="https://i.imgur.com/Impidf1.jpg" alt="Discover our rooms">
-        </div>
-
-        <div class="gallery-item">
-            <img class="gallery-image" src="https://i.imgur.com/TvCa6x7.jpg" alt="Discover our rooms">
-        </div>
-
-        <div class="gallery-item">
-            <img class="gallery-image" src="https://i.imgur.com/PV5NXkL.jpg" alt="Discover our rooms">
-        </div>
-
-        <div class="gallery-item">
-            <img class="gallery-image" src="https://i.imgur.com/xazzyHf.jpg" alt="Discover our rooms">
-        </div>
-
-        <div class="gallery-item">
-            <img class="gallery-image" src="https://i.imgur.com/qG7am0P.jpg" alt="Our restaurant">
-        </div>
-
-        <div class="gallery-item">
-            <img class="gallery-image" src="https://i.imgur.com/opPMmwi.jpg" alt="Our restaurant">
-        </div>
-
-        <div class="gallery-item">
-            <img class="gallery-image" src="https://i.imgur.com/jKzyEfn.jpg" alt="Our restaurant">
-        </div>
-
-        <div class="gallery-item">
-            <img class="gallery-image" src="https://i.imgur.com/ZvwPLas.jpg" alt="Pool next to the house">
-        </div>
-
-        <div class="gallery-item">
-            <img class="gallery-image" src="https://i.imgur.com/bC6OVQG.jpg" alt="Pool next to the house">
-        </div>
-
-    </div>
-
-    </div>
-
-=======
 
     <img class="logolanding" src="../images/Logo-onPages.svg" alt="logo" width="74px" height="70px">
 
-    <div class="container">
-
-        <h1 class="heading">Breathe in the athmosphere of our rooms..</h1>
-
-        <div class="gallery">
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://i.imgur.com/oVi9UwN.jpg" alt="Discover our rooms">
-            </div>
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://i.imgur.com/Impidf1.jpg" alt="Discover our rooms">
-            </div>
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://i.imgur.com/TvCa6x7.jpg" alt="Discover our rooms">
-            </div>
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://i.imgur.com/PV5NXkL.jpg" alt="Discover our rooms">
-            </div>
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://i.imgur.com/xazzyHf.jpg" alt="Discover our rooms">
-            </div>
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://i.imgur.com/IUY2erZ.jpg" alt="Discover our rooms">
-            </div>
-
-        </div>
     </div>
 
+    <!-- start of the Gallery -->
 
     <div class="container">
 
-        <h1 class="heading">..or just enjoy a coctail in the bar</h1>
+        <h1 class="heading">Breathe in the athmosphere of our rooms.. </h1>
 
         <div class="gallery">
+
             <div class="gallery-item">
-                <img class="gallery-image" src="https://i.imgur.com/qG7am0P.jpg" alt="Our restaurant">
+                <img class="gallery-image" src="../images/ODA1.3_01.jpg" alt="Discover our rooms">
             </div>
 
             <div class="gallery-item">
-                <img class="gallery-image" src="https://i.imgur.com/opPMmwi.jpg" alt="Our restaurant">
+                <img class="gallery-image" src="../images/ODA1.4_01.jpg" alt="Discover our rooms">
             </div>
 
             <div class="gallery-item">
-                <img class="gallery-image" src="https://i.imgur.com/jKzyEfn.jpg" alt="Our restaurant">
+                <img class="gallery-image" src="../images/ODA2.3_02.jpg" alt="Discover our rooms">
             </div>
 
         </div>
@@ -181,22 +144,44 @@
 
     <div class="container">
 
-        <h1 class="heading">..or soak in the sunshine next to the pool </h1>
+        <h1 class="heading">..or just enjoy a coctail at the bar</h1>
 
         <div class="gallery">
-
             <div class="gallery-item">
-                <img class="gallery-image" src="https://i.imgur.com/ZvwPLas.jpg" alt="Pool next to the house">
+                <img class="gallery-image" src="../images/RESTAURANT_01.jpeg" alt="Our restaurant">
             </div>
 
             <div class="gallery-item">
-                <img class="gallery-image" src="https://i.imgur.com/bC6OVQG.jpg" alt="Pool next to the house">
+                <img class="gallery-image" src="../images/RESTAURANT_02.jpeg" alt="Our restaurant">
+            </div>
+
+            <div class="gallery-item">
+                <img class="gallery-image" src="../images/RESTAURANT_03.jpeg" alt="Our restaurant">
             </div>
 
         </div>
     </div>
 
+    <div class="container">
 
+        <h1 class="heading">..or soak the sun in next to the pool </h1>
+
+        <div class="gallery">
+
+            <div class="gallery-item">
+                <img class="gallery-image" src="../images/Pool1.jpg" alt="Pool next to the house">
+            </div>
+
+            <div class="gallery-item">
+                <img class="gallery-image" src="../images/Pool2.jpg" alt="Pool next to the house">
+            </div>
+
+            <div class="gallery-item">
+                <img class="gallery-image" src="../images/Pool3.jpg" alt="Pool next to the house">
+            </div>
+
+        </div>
+    </div>
 
     <footer>
         <p>phone +902222222</p>
