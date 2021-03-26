@@ -1,218 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="../images/Logo-onPages.svg"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <title>House of To-Be</title>
-  </head>
 
-  <body>
-    <div class="img-container-contact-us">
-      <a href="../index.html"
-        ><img
-          src="../images/Logo-onPages.svg"
-          alt="Logo"
-          class="desktop-logo"
-          height="70"
-          width="74"
-      /></a>
-      <div class="desktop-menu">
-        <a href="../index.html">
-          <div class="desktop-menu-items">Home</div>
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../images/Logo-onPages.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <title>House of To-Be</title>
+</head>
 
-        <a href="./gallery.html">
-          <div class="desktop-menu-items">Gallery</div>
-        </a>
-        <a href="./aboutus.html">
-          <div class="desktop-menu-items">About Us</div>
-        </a>
-        <a href="./contactus.html">
-          <div class="desktop-menu-items">Contact</div>
-        </a>
-      </div>
+<body>
+  <div class="img-container-contact-us">
+    <a href="../index.html"><img src="../images/Logo-onPages.svg" alt="Logo" class="desktop-logo" height="70"
+        width="74" /></a>
+    <div class="desktop-menu">
+      <a href="../index.html">
+        <div class="desktop-menu-items">Home</div>
+      </a>
 
-      <button class="bookbutton">
-        <a href="#popup1">Book Now</a>
-      </button>
+      <a href="./gallery.html">
+        <div class="desktop-menu-items">Gallery</div>
+      </a>
+      <a href="./aboutus.html">
+        <div class="desktop-menu-items">About Us</div>
+      </a>
+      <a href="./contactus.html">
+        <div class="desktop-menu-items">Contact</div>
+      </a>
+    </div>
 
-      <div id="popup1" class="overlay">
-        <div class="popup">
-          <h2>Booking Request</h2>
-          <a class="close" href="#">&times;</a>
-          <div class="content">
-            <form id="contactForm" class="popup-container">
-              <select>
-                <option value="0">Select Resort:</option>
-                <option value="1">House of To-Be</option>
-                <option value="2">Villa France</option>
-                <option value="3">Villa Lavandes</option>
-              </select>
+    <button class="bookbutton">
+      <a href="#popup1">Book Now</a>
+    </button>
 
-              <input
-                type="text"
-                class="datepicker"
-                id="litepicker"
-                placeholder="Check in - Check out"
-                required="required"
-                readonly=""
-              />
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <h2>Booking Request</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <form id="contactForm" class="popup-container">
+            <select>
+              <option value="0">Select Resort:</option>
+              <option value="1">House of To-Be</option>
+              <option value="2">Villa France</option>
+              <option value="3">Villa Lavandes</option>
+            </select>
 
-              <select>
-                <option value="0">Number of Person</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
+            <input type="text" class="datepicker" id="litepicker" placeholder="Check in - Check out" required="required"
+              readonly="" />
 
-              <input type="submit" value="reserve now" class="submit-button" />
-            </form>
-          </div>
+            <select>
+              <option value="0">Number of Person</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+
+            <input type="submit" value="reserve now" class="submit-button" />
+          </form>
         </div>
       </div>
     </div>
-    <div class="dropdown-menu">
-      <img
-        src="../images/Logo-onPages.svg"
-        height="70"
-        width="74"
-        alt="logo"
-        class="logo"
-      />
-      <div class="hamburger-menu">
-        <div class="line line-1"></div>
-        <div class="line line-2"></div>
-        <div class="line line-3"></div>
-      </div>
-      <ul class="dropdown-menu-items">
-        <li><a class="item" href="../index.html">Home</a></li>
-        <li><a class="item" href="./aboutus.html">About Us</a></li>
-        <li><a class="item" href="./gallery.html">Gallery</a></li>
-        <li><a class="item" href="./contactus.html">Contact Info</a></li>
-      </ul>
+  </div>
+  <div class="dropdown-menu">
+    <img src="../images/Logo-onPages.svg" height="70" width="74" alt="logo" class="logo" />
+    <div class="hamburger-menu">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
     </div>
-    <div class="slidedown-bar">
-      <img
-        src="../images/Logo-onPages.svg"
-        height="70"
-        width="74"
-        alt="logo"
-        class="logo-slidedown"
-      />
-      <a href="#popup1" class="reserve">reserve</a>
-      <div class="hamburger-menu-slidedown">
-        <div class="line line-1"></div>
-        <div class="line line-2"></div>
-        <div class="line line-3"></div>
-      </div>
+    <ul class="dropdown-menu-items">
+      <li><a class="item" href="../index.html">Home</a></li>
+      <li><a class="item" href="./aboutus.html">About Us</a></li>
+      <li><a class="item" href="./gallery.html">Gallery</a></li>
+      <li><a class="item" href="./contactus.html">Contact Info</a></li>
+    </ul>
+  </div>
+  <div class="slidedown-bar">
+    <img src="../images/Logo-onPages.svg" height="70" width="74" alt="logo" class="logo-slidedown" />
+    <a href="#popup1" class="reserve">reserve</a>
+    <div class="hamburger-menu-slidedown">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
     </div>
-    <main class="main-wrapper-contact-us">
-      <div class="welcome-contact-us">
-        <img
-          height="70"
-          width="74"
-          src="../images/Logo-onPages.svg"
-          alt="logo"
-        />
-        <h2>Contact Us!</h2>
-        <p class="Contact Us">
-          <br />
-          Feel free to contact us at any time!<br />
-          You can give us a call to speak to someone personal, write us an email
-          or leave a message in the contact form.<br />
-        </p>
+  </div>
+  <main class="main-wrapper-contact-us">
+    <div class="welcome-contact-us">
+      <img height="70" width="74" src="../images/Logo-onPages.svg" alt="logo" />
+      <h2>Contact Us!</h2>
+      <p class="Contact Us">
         <br />
+        Feel free to contact us at any time!<br />
+        You can give us a call to speak to someone personal, write us an email
+        or leave a message in the contact form.<br />
+      </p>
+      <br>
+      <br>
 
-        <!-- <a href="tel:+905076038356" /a><br>
+      <!-- <a href="tel:+905076038356" /a><br>
                 <h3><img height="60" width="64" src="../images/PhoneOutgoing.svg" </h3>-->
-        <a href="tel:+905076038356">
-          <img height="60" width="64" src="../images/PhoneOutgoing.svg" /> </a
-        ><br />
+      <a href="tel:+905076038356">
+        <img height="60" width="64" src="../images/PhoneOutgoing.svg" /> </a><br />
 
-        <a href="mailto: info@housoftobe.com">
-          <img height="60" width="64" src="../images/EnvelopeSimple.svg""> </a
+      <a href="mailto: info@housoftobe.com">
+        <img height="60" width="64" src="../images/EnvelopeSimple.svg""> </a
         ><br />
 
         <!--  <a href=" mailto: info@housoftobe.com"><br>
-                <h3><img height="60" width="64" src="../images/EnvelopeSimple.svg" </h3><br>-->
+        <h3><img height="60" width="64" src="../images/EnvelopeSimple.svg" </h3><br>-->
 
-        <h3>Direct Message</h3>
-        <br />
-        <form>
-          <div class="form-group">
-            <label>First Name *</label>
-            <input
-              type="text"
-              class="form-control"
-              name="First Name"
-              placeholder=""
-              required="required"
-            />
-          </div>
+          <h3>Direct Message</h3>
+          <br />
+          <form>
+            <div class="form-group">
+              <label>First Name *</label>
+              <input type="text" class="form-control" name="First Name" placeholder="" required="required" />
+            </div>
 
-          <div class="form-group">
-            <label>Last Name *</label>
-            <input
-              type="text"
-              class="form-control"
-              name="Last Name"
-              placeholder=""
-              required="required"
-            />
-          </div>
+            <div class="form-group">
+              <label>Last Name *</label>
+              <input type="text" class="form-control" name="Last Name" placeholder="" required="required" />
+            </div>
 
-          <div class="form-group">
-            <label>E-Mail *</label>
-            <input
-              type="email"
-              class="form-control"
-              name="email"
-              placeholder=""
-            />
-          </div>
+            <div class="form-group">
+              <label>E-Mail *</label>
+              <input type="email" class="form-control" name="email" placeholder="" />
+            </div>
 
-          <div class="form-group">
-            <label>Subject *</label>
-            <input
-              type="text"
-              class="form-control"
-              name="Subject"
-              placeholder=""
-              required="required"
-            />
-          </div>
+            <div class="form-group">
+              <label>Subject *</label>
+              <input type="text" class="form-control" name="Subject" placeholder="" required="required" />
+            </div>
 
-          <div class="form-group">
-            <label>Message *</label>
-            <textarea
-              class="form-control"
-              name="Message"
-              placeholder=""
-              required="required"
-            ></textarea
-            ><br />
-          </div>
+            <div class="form-group">
+              <label>Message *</label>
+              <textarea class="form-control" name="Message" placeholder="" required="required"></textarea><br />
+            </div>
 
-          <div class="form-group">
-            <input type="submit" class="buttonsend" name="Send" value="Send" />
-          </div>
-          <small>Fields marked with * are required</small>
-        </form>
-      </div>
-    </main>
-    <footer>
-      <p>phone +902222222</p>
-      <p><a href="info@housoftobe.com">info@housoftobe.com</a></p>
-    </footer>
+            <div class="form-group">
+              <input type="submit" class="buttonsend" name="Send" value="Send" />
+            </div>
+            <small>Fields marked with * are required</small>
+          </form>
+    </div>
+  </main>
+  <footer>
+    <p>phone +902222222</p>
+    <p><a href="info@housoftobe.com">info@housoftobe.com</a></p>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
-    <script src="../js/index.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
+  <script src="../js/index.js"></script>
+</body>
+
 </html>
