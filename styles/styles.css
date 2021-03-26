@@ -7,6 +7,15 @@
   padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #5a3b21;
+}
 li {
   list-style: none;
 }
@@ -17,11 +26,12 @@ a {
 
 body {
   font-family: Quicksand, Arial, Helvetica, sans-serif;
+  background-color: #f9f1e4;
 }
 
 /* Header section */
 .img-container-contact-us {
-  background: url(../images/panoramacontact.png);
+  background: url(../images/panoramachampusview.jpg);
   background-position: 90%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -399,6 +409,7 @@ select {
 }
 
 /* about-us page */
+
 .nicestory {
   position: relative;
   top: 25px;
@@ -413,7 +424,7 @@ select {
   padding: 10px;
   position: relative;
   color: black;
-  z-index: -1;
+  /* z-index: -1; */
 }
 @media screen and (min-width: 900px) {
   body {
@@ -452,4 +463,63 @@ select {
   .slidedown-bar {
     display: none;
   }
+}
+
+@media (max-height: 800px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+  header {
+    padding-top: 40px;
+  }
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #faf1e4;
+  color: #5a3b21;
+  text-align: center;
+}
+
+.footer .footer-right,
+.footer .footer-center,
+.footer .footer-left {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer .footer-right {
+  scroll-padding: initial;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.footer-right h1 {
+  font-size: 15px;
+  color: #583a20;
+  text-align: center;
+}
+
+.footer .footer-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.footer .footer-left {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.iconify {
+  padding: 10px;
+  position: relative;
+  color: black;
 }
