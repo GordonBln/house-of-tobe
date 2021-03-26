@@ -337,8 +337,9 @@ select {
   footer {
     position: fixed;
     bottom: 0;
+    background-color: #f9f1e4;
   }
-    @media (max-height:800px;){
+@media (max-height:800px){
       footer { position: static;
       display: flex; 
     flex-direction: row;}
@@ -349,7 +350,7 @@ select {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color:  #FAF1E4;
+    background-color:  #f9f1e4;
     color: #5a3b21;
     text-align: center;
       }
@@ -388,4 +389,5 @@ text-align:center;
   padding: 10px;
   position:relative;
   color: black;
+}
 }
