@@ -338,9 +338,12 @@ select {
     position: fixed;
     bottom: 0;
   }
-    @media (max-height:800px){
-      footer { position: static; }
+    @media (max-height:800px;){
+      footer { position: static;
+      display: flex; 
+    flex-direction: row;}
       header { padding-top:40px; }
+}
 
 .footer {
     left: 0;
