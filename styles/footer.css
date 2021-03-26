@@ -329,6 +329,60 @@ select {
     display: none;
   }
   .slidedown-bar {
-    display: none;
+    display: none
+  } 
+
+  /* Footer */
+
+  footer {
+    position: fixed;
+    bottom: 0;
   }
+    @media (max-height:800px){
+      footer { position: static; }
+      header { padding-top:40px; }
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:  #FAF1E4;
+    color: #5a3b21;
+    text-align: center;
+      }
+
+.footer .footer-right,
+.footer .footer-center,
+.footer .footer-left {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer .footer-right {
+  scroll-padding:initial;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.footer-right .h1 {
+color: black;
+text-align:center;
+}
+
+.footer .footer-center {
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.footer .footer-left {
+  justify-content: center;
+  align-items: center;
+  width: 30;
+}
+
+.iconify {
+  padding: 10px;
+  position:relative;
+  color: black;
 }
